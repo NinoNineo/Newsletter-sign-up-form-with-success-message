@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+
+<body>
+
+  <div class="content flex">
+    <div class="stay">
+      <div class="container">
+        <h1 class="h1">Stay updated!</h1>
+
+        <p>Join 60,000+ product managers receiving monthly updates on: </p>
+
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form id="form" class="form" action="success.html">
+          <div class="flex">
+            <label for="email">Email address</label>
+            <span id="err" class="just-span">Valid email required</span>
+          </div>
+          <input type="email" id="email" name="email" placeholder="email@company.com" required>
+          <button class="button" id="btn" disabled>Subscribe to monthly newsletter</button>
+
+        </form>
+      </div>
+    </div>
+
+    <picture class="imageDiv">
+      <source media="(max-width:376px)" srcset="/assets/images/illustration-sign-up-mobile.svg">
+      <img src="/assets/images/illustration-sign-up-desktop.svg">
+    </picture>
+
+  </div>
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/NinoNineo?tab=repositories">Nino Papashvili</a>.</p>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
